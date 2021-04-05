@@ -1,0 +1,35 @@
+.cards.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardComponents {
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e2dddd;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 5px 10px #e2dddd;
+    border-radius: 4px;
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}   
+span.card_category {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+span.card_desc {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
