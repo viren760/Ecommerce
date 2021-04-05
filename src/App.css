@@ -180,8 +180,8 @@ nav{
  
  span:hover{
    cursor: pointer;
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5); 
   transform: scale(1.5); 
  }
  
@@ -212,11 +212,11 @@ nav{
    font-weight: bold;
    font-family:Arial, Helvetica, sans-serif ;
  }
- .cards:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
+ /* .cards:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
   transform: scale(1.1); 
-}
+} */
 .card-footer-r{
   background-color: red;
   color:#fff;
@@ -227,5 +227,17 @@ nav{
 }
 .container-fluid{
   background-color: green;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+  padding: 5px;
+}
+label{
+  font-weight: bold;
+  font-size: medium;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.check{
+  background-color: #000;
   color: #fff;
 }
