@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 
 
-const PAGE_PRODUCT = 'props';
+const PAGE_PRODUCT = 'product';
 const PAGE_CART = 'cart';
 
 
@@ -102,9 +102,11 @@ function Card({ dataArray }) {
             <span className="card_category"> {item.title} </span>
             <span className="card_desc">{item.sname} </span>
             <div >
-              <span className="card-footer" onClick={() => removeFromCart(item)} style={{ textAlign: 'center' },{backgroundColor:'red'}} >
+              <span className="card-footer" onClick={() => removeFromCart(item)} style={{ textAlign: 'center' }, { backgroundColor: 'red' }} >
                 Remove
               </span>
+            </div>
+            <div>
             </div>
           </div>
         </div>
@@ -120,11 +122,11 @@ function Card({ dataArray }) {
         <button onClick={() => navigateTo(PAGE_CART)}> Go to  Cart ({cart.length}) </button>
       </div>
       <div className="cards container">
-        {components()}
+        {page === PAGE_PRODUCT && components()}
       </div>
 
       <div className="cards container">
-        {renderCart()}
+        {page === PAGE_CART && renderCart()}
       </div>
 
     </>
