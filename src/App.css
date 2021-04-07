@@ -241,3 +241,8 @@ label{
   background-color: #000;
   color: #fff;
 }
+.col-5{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

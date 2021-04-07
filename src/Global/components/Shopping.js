@@ -1,4 +1,5 @@
 import React, { createContext, useState } from 'react';
+import {Link} from 'react-router-dom'
 
 
 const PAGE_PRODUCT = 'product';
@@ -79,11 +80,11 @@ function Card({ dataArray }) {
                 Remove
               </span>
             </div>
-            <div>
-            </div>
           </div>
         </div>
+        
       )
+    
     })
   }
 

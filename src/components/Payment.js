@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import CVV from '../assests/cvv.png'
 
 
 const Payment = () => {
@@ -41,14 +42,14 @@ const Payment = () => {
                          min="2018-03" value=""></input>
                     </div>  
                     <div>
-                        <label> Security Code </label>
+                        <label> Security Code / CVV </label>
                         <input type="text" className="form-control" />
                     </div>   
-                     <div>
-                         <img src="./cvv.jpg" className="cvv" />
+                     <div className="cvv">
+                        <img src={CVV}  width="100%" height="100%"/>
                      </div>
 
-                     <div style={{textAlign:'center'}}>
+                     <div className="payment-b" style={{textAlign:'center'}}>
                      <Link to="/checkout"> <button className="btn btn-primary"> Back to the pervious page </button> </Link>
                         <Link to='/deliver'> <button className="btn btn-success" > Confirm Payment </button> </Link> 
                       </div>    

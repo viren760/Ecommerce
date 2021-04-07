@@ -13,7 +13,7 @@ const Checkout = () => {
            <h1 style={{textAlign:'center'}}> CHECKOUT  </h1>
              </div>
             <label> Contact information  </label>
-            <input type="text" id="email" className="form-control" placeholder="Email"/>
+            <input type="text" id="email" className="form-control" placeholder="Email" required/>
             <span id="message1" className="text-danger"> </span>
             <div className="custom-control custom-checkbox mb-3">
             <input type="checkbox" className="custom-control-input" id="customCheck" name="example1"/>
@@ -23,17 +23,17 @@ const Checkout = () => {
              <br/>
 
              <h3> Shipping address </h3>
-             <input type="text" id="fname" className="form-control" placeholder="first Name" />
+             <input type="text" id="fname" className="form-control" placeholder="first Name" required />
              <span id="message2" className="text-danger"> </span>
-             <input type="text" id="lname" className="form-control" placeholder="last Name" />
+             <input type="text" id="lname" className="form-control" placeholder="last Name" required />
              <span id="message3" className="text-danger"> </span>
-             <input type="text" id="address" className="form-control" placeholder="address" />
+             <input type="text" id="address" className="form-control" placeholder="address" required />
              <span id="message4" className="text-danger"> </span>
-             <input type="text" id="city" className="form-control" placeholder="city" />
+             <input type="text" id="city" className="form-control" placeholder="city" required />
              <span id="message5" className="text-danger"> </span>
-             <input type="text" id="code" className="form-control" placeholder="postal code" />
+             <input type="text" id="code" className="form-control" placeholder="postal code" required />
              <span id="message6" className="text-danger"> </span>
-             <input type="number" id="number" className="form-control" placeholder="phone number"/>
+             <input type="number" id="number" className="form-control" placeholder="phone number" required/>
              <span id="message7" className="text-danger"> </span>
              <div className='btnc' style={{textAlign:'center'}}>
                  <Link to="/cart"> <button className="btn btn-primary">  Return to cart </button> </Link>
