@@ -12,7 +12,7 @@ const Navbar = () => {
                 </ul> 
                 <ul className="right">
                 <li> <Link to="cart">
-                    <span className="shoppingCart"> <i class="fas fa-cart-plus"></i> </span>               
+                    <span className="shoppingCart"> <i className="fas fa-cart-plus"></i> </span>               
                     <span className="cartCount"> 0 </span>
                 </Link> </li>
                  </ul>     

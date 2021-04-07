@@ -59,38 +59,11 @@ function Card({ dataArray }) {
 
   }
 
-  // function for displaying products in the home page ...
-  const renderProducts = () => (
-    <>
-
-    </>
-  );
+  
 
 
 
-
-  // function for showing the products in the carts ...
-  // const renderCarts =() =>(
-  //    <>   
-  //       <h1> Cart</h1>
-  //        <div className="cards " style={{display:'inline-block'}}>
-  //         <div className="card">
-  //          <img src={props.imgsrc} alt="pic" className="card_img"/>
-  //          <div style={{textAlign:'center' ,fontWeight:'bold'}}>
-  //              <div className="card_info">
-  //              </div>
-  //                <span className="card_category"> {props.title} </span> 
-  //                <div>  <h6 className="card_desc">{props.sname} </h6> </div>
-  //             <div className="card-footer-r" onClick={()=>removeFromCart(props)} style={{textAlign:'center'}} > 
-  //               Remove
-  //             </div>  
-  //             </div>   
-  //         </div>  
-  //   </div>
-  //    </>
-
-  //   );
-
+ 
   const renderCart = () => {
 
     return cart.map((item, index) => {
